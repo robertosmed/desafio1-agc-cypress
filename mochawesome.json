@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-13T00:47:02.914Z",
-    "end": "2021-01-13T00:47:15.272Z",
-    "duration": 12358,
+    "start": "2021-01-13T00:52:52.154Z",
+    "end": "2021-01-13T00:53:03.637Z",
+    "duration": 11483,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e3333aa4-f525-4798-a874-0b6eee57716f",
+      "uuid": "012a9966-141a-4b9d-83b8-00ad463825b9",
       "title": "",
       "fullFile": "cypress/integration/Cadastro.spec.js",
       "file": "cypress/integration/Cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2bf32beb-9671-4db6-aeb0-f16168125a88",
+          "uuid": "32efcd76-f49a-4bbb-9f5f-95ab56aef86a",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastro de usuario no site",
               "fullTitle": "Cadastro Cadastro de usuario no site",
               "timedOut": null,
-              "duration": 12288,
+              "duration": 11421,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// base Url - http://automationpractice.com/index.php\ncy.visit('/');\ncy.get(\".header_user_info a[href$='controller=my-account']\").click();\ncy.get('#email_create').type(chance.email());\ncy.get(\"button[name='SubmitCreate']\").click(); // check -> radio\ncy.get(\"#id_gender2\").check(); // nome customer\ncy.get(\"input[name='customer_firstname']\").type(chance.first());\ncy.get(\"input[name='customer_lastname']\").type(chance.last());\ncy.get(\"input[name='passwd']\").type('123456'); // select -> select & select2 (combos)\ncy.get('select#days').select('16');\ncy.get('select#months').select('February');\ncy.get('select#years').select('1945');\ncy.get(\"input[name='address1']\").type('Rua California do Norte');\ncy.get(\"input[name='city']\").type('EUA');\ncy.get('select#id_state').select('California');\ncy.get(\"input#postcode\").type('99501');\ncy.get(\"input#phone_mobile\").type(chance.phone({\n  formatted: false\n}));\ncy.get(\"button[name='submitAccount']\").click(); //validando que foi redirecionado para url correta\ncy.url().should('contain', 'my-account'); //validando a exibicao do texto 'Welcome to your account'\ncy.get('.info-account').should('contain.text', 'Welcome to your account.');",
               "err": {},
-              "uuid": "095258dd-9c74-4556-86ca-7c1c383785e6",
-              "parentUUID": "2bf32beb-9671-4db6-aeb0-f16168125a88",
+              "uuid": "8da192d5-cf1d-4ef3-9a3c-ec8bdb4481c9",
+              "parentUUID": "32efcd76-f49a-4bbb-9f5f-95ab56aef86a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "095258dd-9c74-4556-86ca-7c1c383785e6"
+            "8da192d5-cf1d-4ef3-9a3c-ec8bdb4481c9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12288,
+          "duration": 11421,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
